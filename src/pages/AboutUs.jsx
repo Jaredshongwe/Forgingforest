@@ -6,7 +6,8 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 
 const AboutUs = () => (
   <div>
-    <HeroSection title='About Us' />
+    <HeroSection title='About Us'
+    image='../AboutUs.jpg' />
     <div>
       <Container fluid className='p-5'>
         <Row className='my-5'>
@@ -42,13 +43,13 @@ const AboutUs = () => (
        maker and the recipient.'
       buttonText='Learn more'
       buttonLink='/services'
-      imageSrc='../Placeholder.png'
+      imageSrc='../PersonalizedApproach.jpg'
     />
 
     <div>
       <Col className='text-center my-5' sm={4} md={{ span: 12 }}>
         <Image
-          src='../Placeholder.png'
+          src='../AboutUs.jpg'
           alt='placeholder'
           width='30%'
           height='auto'
@@ -75,7 +76,7 @@ const AboutUs = () => (
         <Col sm={4} md={{ span: 3, offset: 1 }}>
           <Image
             className='my-5'
-            src='../Placeholder.png'
+            src='../1.jpg'
             alt='placeholder'
             width='80%'
             height='280'
@@ -86,7 +87,7 @@ const AboutUs = () => (
       <Row className='my-5'>
         <Col sm={4} md={{ span: 3 }}>
           <Image
-            src='../Placeholder.png'
+            src='../2.jpg'
             alt='placeholder'
             width='80%'
             height='280'
@@ -95,22 +96,7 @@ const AboutUs = () => (
         </Col>
         <Col sm={4} md={7}>
           <p style={{ fontSize: 20 }}>
-            Our journey begins with the meticulous selection of reclaimed wood
-            sourced from a variety of places, including old barns, factories,
-            and even discarded furniture. This careful curation ensures that we
-            use only the finest materials with rich histories and unique
-            characteristics. Once selected, the wood is brought to our workshop,
-            where our skilled artisans take over. With a keen eye for detail and
-            a deep respect for the material, they meticulously transform these
-            salvaged pieces into stunning, one-of-a-kind creations.
-          </p>
-        </Col>
-      </Row>
-
-      <Row className='my-5'>
-        <Col sm={4} md={7}>
-          <p style={{ fontSize: 20 }}>
-            We are dedicated to sustainability, which is why we use
+           We are dedicated to sustainability, which is why we use
             environmentally friendly finishes such as natural oils and waxes.
             These finishes not only enhance the natural beauty of the wood,
             bringing out its rich colors and intricate grain patterns, but also
@@ -119,9 +105,24 @@ const AboutUs = () => (
             our customers and the environment.
           </p>
         </Col>
+      </Row>
+
+      <Row className='my-5'>
+        <Col sm={4} md={7}>
+          <p style={{ fontSize: 20 }}>
+          From start to finish, our process is guided by a philosophy of respect 
+          and responsibility. We honor the legacy of the wood we work with, breathing 
+          new life into materials that would otherwise be discarded. Every cut, 
+          every joint, and every finish is executed with precision and care, 
+          resulting in pieces that are as durable as they are beautiful. By 
+          blending traditional craftsmanship with modern techniques, we are 
+          able to create furniture and decor that stand the test of time, 
+          both in terms of style and sustainability.
+          </p>
+        </Col>
         <Col sm={4} md={{ span: 3, offset: 1 }}>
           <Image
-            src='../Placeholder.png'
+            src='../3.jpg'
             alt='placeholder'
             width='80%'
             height='280'
@@ -133,7 +134,7 @@ const AboutUs = () => (
       <Row className='my-5'>
         <Col sm={4} md={{ span: 3 }}>
           <Image
-            src='../Placeholder.png'
+            src='../4.jpg'
             alt='placeholder'
             width='80%'
             height='280'

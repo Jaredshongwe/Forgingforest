@@ -1,13 +1,41 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-font: 'Ubuntu Sans', sans-serif; /* Primary font */
+    --secondary-font: 'Lora', serif; /* Secondary font */
+  }
+
+  html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+
 body {
-    font-family: 'Arial, sans-serif';
+    background-image:url('../background.png');
+    background-size: 70%;
+    background-color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 h1,
-h2 {
+h2, h3, h4{
+    font-family: var(--primary-font);
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 p {
+    font-family: var(--secondary-font);
     margin-bottom: 20px;
 }

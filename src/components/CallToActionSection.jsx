@@ -12,8 +12,10 @@ const CallToActionSection = ({
       <Col className='text-center' sm={4} md={5}>
         <h1 style={{ fontSize: 50 }}>{title}</h1>
       </Col>
-      <Col sm={4} md={{ span: 4, offset: 4 }}>
-        <p className='my-5' style={{ fontSize: 20 }}>
+    </Row>
+    <Row>
+      <Col>
+        <p style={{ fontSize: 20 }}>
           {description}
         </p>
         <Button variant='dark' href='/Contact'>

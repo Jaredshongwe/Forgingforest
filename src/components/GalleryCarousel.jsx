@@ -1,8 +1,24 @@
+import { useState, useEffect } from 'react';
 import { Container, Row, Col, Carousel, Image } from 'react-bootstrap';
-import { useState } from 'react';
+import axios from 'axios';
 
-const TestimonialCarousel = () => {
+const GalleryCarousel = () => {
+  const [images, setImages] = useState([]);
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get('/api/images');
+        console.log('Fetched images:', response.data);  // Add logging
+        setImages(response.data);
+      } catch (error) {
+        console.error('Error fetching images', error);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
@@ -16,25 +32,24 @@ const TestimonialCarousel = () => {
             className='my-5 p-5'
             data-bs-theme='dark'
             activeIndex={index}
-            onSelect={handleSelect}>
-            {Array(3)
-              .fill()
-              .map((_, idx) => (
-                <Carousel.Item key={idx}>
-                  <Row>
-                    <Col className='text-center'>
-                      <Image
-                        className='my-5'
-                        src='../Placeholder.png'
-                        alt='placeholder'
-                        width='50%'
-                        height='450'
-                      />
-                      <p>Caption</p>
-                    </Col>
-                  </Row>
-                </Carousel.Item>
-              ))}
+            onSelect={handleSelect}
+          >
+            {images.map((image, idx) => (
+              <Carousel.Item key={idx}>
+                <Row>
+                  <Col className='text-center'>
+                    <Image
+                      className='my-5'
+                      src={image.url}
+                      alt={image.description}
+                      width='50%'
+                      height='450'
+                    />
+                    <p>{image.description}</p>
+                  </Col>
+                </Row>
+              </Carousel.Item>
+            ))}
           </Carousel>
         </Col>
       </Row>
@@ -42,4 +57,4 @@ const TestimonialCarousel = () => {
   );
 };
 
-export default TestimonialCarousel;
+export default GalleryCarousel;

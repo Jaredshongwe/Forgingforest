@@ -14,7 +14,7 @@ const Home = () => {
         description='At Forging Forest, we are committed to an eco-friendly approach to woodworking. Our unique recycling process allows us to create beautiful, handcrafted pieces while minimizing waste and preserving the environment. Each piece we create tells a story of sustainability and craftsmanship.'
         buttonText='Learn more'
         buttonLink='/services'
-        imageSrc='../Placeholder.png'
+        imageSrc='../SustainableWood.jpg'
       />
 
       <div>
@@ -45,7 +45,7 @@ const Home = () => {
       <div>
         <Col className='text-center my-5' sm={4} md={{ span: 12 }}>
           <Image
-            src='../Placeholder.png'
+            src='../banner.jpg'
             alt='placeholder'
             width='100%'
             height='900'
@@ -76,7 +76,7 @@ const Home = () => {
           <Row>
             <Col sm={4}>
               <Image
-                src='../Placeholder.png'
+                src='../Process.jpg'
                 alt='placeholder'
                 width='90%'
                 height='300'
@@ -90,7 +90,7 @@ const Home = () => {
             </Col>
             <Col sm={4}>
               <Image
-                src='../Placeholder.png'
+                src='../Detail.jpg'
                 alt='placeholder'
                 width='90%'
                 height='300'
@@ -104,7 +104,7 @@ const Home = () => {
             </Col>
             <Col sm={4}>
               <Image
-                src='../Placeholder.png'
+                src='../Finishing.jpg'
                 alt='placeholder'
                 width='90%'
                 height='300'

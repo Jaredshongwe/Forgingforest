@@ -19,7 +19,7 @@ const FeatureSection = ({
           {buttonText}
         </Button>
       </Col>
-      <Col sm={4} md={{ span: 4, offset: 2 }}>
+      <Col sm={4} md={{ span: 4, offset: 1 }}>
         <Image
           src={imageSrc}
           alt='placeholder'

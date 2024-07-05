@@ -1,5 +1,5 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import BackgroundImage from '/Placeholder.png';
+import BackgroundImage from '/HeroSection.jpg';
 
 const HeroSection = () => {
   const background = {

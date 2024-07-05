@@ -6,7 +6,8 @@ import HeroSection from '../components/SecondaryHeroSection';
 const ContactUs = () => {
   return (
     <div>
-      <HeroSection title='Contact Us' />
+      <HeroSection title='Contact Us' 
+      image='../ContactUs.jpg'/>
       <Container>
         <Row className='my-5'>
           <Col md={5}>
@@ -22,7 +23,8 @@ const ContactUs = () => {
               </a>
             </p>
             <p>
-              <strong>Phone:</strong> (+27) 63 359 3826
+              <strong>Phone:</strong> <a className='link-underline link-underline-opacity-0'
+                href='https://wa.me/27633595826'><em>(+27) 63 359 3826</em></a>
             </p>
             <p>
               <em>*Socials below</em>

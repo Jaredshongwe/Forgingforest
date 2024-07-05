@@ -6,13 +6,14 @@ import CallToActionSection from '../components/CallToActionSection';
 const Services = () => {
   return (
     <div>
-      <HeroSection title='Services' />
+      <HeroSection title='Services'
+      image='../Services.jpg' />
       <Container fluid className='p-5'>
         <Row className='my-5'>
           <Col className='mx-5' md={{ span: 3 }}>
             <Image
-              src='../Placeholder.png'
-              alt='placeholder'
+              src='../handmade.jpg'
+              alt='handmade'
               width='80%'
               height='250'
               className='my-5'
@@ -34,8 +35,8 @@ const Services = () => {
           </Col>
           <Col md={{ span: 3, offset: 1 }}>
             <Image
-              src='../Placeholder.png'
-              alt='placeholder'
+              src='../refurbish.jpg'
+              alt='refurbish'
               width='80%'
               height='250'
               className='my-5'
@@ -57,8 +58,8 @@ const Services = () => {
           </Col>
           <Col md={{ span: 3, offset: 1 }}>
             <Image
-              src='../Placeholder.png'
-              alt='placeholder'
+              src='../donate.jpg'
+              alt='donate'
               width='80%'
               height='250'
               className='my-5'

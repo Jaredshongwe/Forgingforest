@@ -11,7 +11,7 @@ const Footer = () => {
           <Col>
             <Navbar className='mx-5 my-5'>
               <Nav className='me-auto '>
-                <Nav.Link className='mx-5 ' href='/home'>
+                <Nav.Link className='mx-5 ' href='/'>
                   Home
                 </Nav.Link>
                 <Nav.Link className='mx-5 ' href='/about'>
@@ -29,7 +29,7 @@ const Footer = () => {
 
           <Col className='my-5 mx-5 text-end'>
             <Navbar.Brand
-              href='http://facebook.com'
+              href='https://web.facebook.com/profile.php?id=61561363316320'
               target='_blank'
               rel='noopener noreferrer'>
               <Image
@@ -41,7 +41,7 @@ const Footer = () => {
               />
             </Navbar.Brand>
             <Navbar.Brand
-              href='http://instagram.com'
+              href='https://www.instagram.com/forging_forest/?utm_source=ig_web_button_share_sheet'
               target='_blank'
               rel='noopener noreferrer'>
               <Image
@@ -52,7 +52,10 @@ const Footer = () => {
                 className='p-2 mx-2'
               />
             </Navbar.Brand>
-            <Navbar.Brand href='/contact'>
+            <Navbar.Brand 
+            href='https://wa.me/27633595826'
+            target='_blank'
+            rel='noopener noreferrer'>
               <Image
                 src='../whatsapp.svg'
                 alt='whatsapp'
@@ -62,7 +65,7 @@ const Footer = () => {
               />
             </Navbar.Brand>
             <Navbar.Brand
-              href='http://youtube.com'
+              href='https://www.youtube.com/channel/UCyQvW-wGAQ10gIg88Ftg7tw'
               target='_blank'
               rel='noopener noreferrer'>
               <Image

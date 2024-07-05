@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Container, Row, Col } from 'react-bootstrap';
-import BackgroundImage from '/Placeholder.png';
 
-const SecondaryHeroSection = ({ title }) => (
+const SecondaryHeroSection = ({ title, image }) => (
   <div
     style={{
-      backgroundImage: `url(${BackgroundImage})`,
+      backgroundImage: `url(${image})`,
       height: '400px',
       color: 'white',
     }}>
