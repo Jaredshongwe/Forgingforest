@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import express from 'express';
-import Contact from '../models/Contact.js';
+import Contact from '../models/contact.js';
 import nodemailer from 'nodemailer';
 
 const router = express.Router();
