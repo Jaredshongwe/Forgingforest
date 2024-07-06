@@ -3,9 +3,18 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+  },
   server: {
+    open: true,
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api': 'https://forgingforest.onrender.com',
+    },
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
     },
   },
 });
