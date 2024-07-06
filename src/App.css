@@ -1,41 +1,58 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap');
 
 /* Define CSS variables */
 :root {
     --primary-font: 'Ubuntu Sans', sans-serif; /* Primary font */
     --secondary-font: 'Lora', serif; /* Secondary font */
-  }
+}
 
-  html, body {
+html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
-
-html {
-    display: table;
-    margin: auto;
-}
-
 
 body {
-    background-image:url('../background.png');
-    background-size: 70%;
-    background-color: #ffffff;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 2%;
-    padding-right: 2%;
+    font-family: var(--secondary-font);
+    padding: 2%;
 }
 
-h1,
-h2, h3, h4{
+h1, h2, h3, h4, h5 {
     font-family: var(--primary-font);
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
 p {
-    font-family: var(--secondary-font);
     margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover {
+    transform: translateY(-5px); /* Add a slight movement on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoverimg:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-family: var(--primary-font);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
 }

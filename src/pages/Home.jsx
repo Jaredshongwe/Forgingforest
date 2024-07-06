@@ -4,6 +4,7 @@ import FeatureSection from '../components/FeatureSection';
 import TestimonialCarousel from '../components/TestimonialCarousel';
 import FAQSection from '../components/FAQSection';
 import CallToActionSection from '../components/CallToActionSection';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -17,7 +18,11 @@ const Home = () => {
         imageSrc='../SustainableWood.jpg'
       />
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Container fluid className='p-5'>
           <Row className='my-5'>
             <Col className='text-center' sm={4} md={5}>
@@ -40,20 +45,32 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Col className='text-center my-5' sm={4} md={{ span: 12 }}>
           <Image
             src='../banner.jpg'
-            alt='placeholder'
+            alt='Interesting wood grain'
             width='100%'
             height='900'
+            as={motion.img}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
           />
         </Col>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Container fluid className='p-5'>
           <Row className='my-5'>
             <Col sm={4} md={5}>
@@ -69,20 +86,29 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Container fluid className='p-5'>
           <Row>
             <Col sm={4}>
               <Image
+                className='hoverimg'
                 src='../Process.jpg'
-                alt='placeholder'
+                alt='Sustainable Woodworking at Forging Forest'
                 width='90%'
                 height='300'
                 rounded
+                as={motion.img}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
               />
-              <h1 style={{ fontSize: 40 }}>Sustainable Woodworking Process</h1>
+              <h5 style={{ fontSize: 40 }}>Sustainable Woodworking Process</h5>
               <p className='my-5' style={{ fontSize: 20 }}>
                 Our process starts with carefully selecting reclaimed wood from
                 various sources.
@@ -90,13 +116,18 @@ const Home = () => {
             </Col>
             <Col sm={4}>
               <Image
+                className='hoverimg'
                 src='../Detail.jpg'
-                alt='placeholder'
+                alt='Eco-Friendly Furniture and Carpentry'
                 width='90%'
                 height='300'
                 rounded
+                as={motion.img}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
               />
-              <h1 style={{ fontSize: 40 }}>Attention to Detail</h1>
+              <h5 style={{ fontSize: 40 }}>Attention to Detail</h5>
               <p className='my-5' style={{ fontSize: 20 }}>
                 Our skilled artisans meticulously transform the salvaged wood
                 into stunning, one-of-a-kind pieces.
@@ -104,15 +135,20 @@ const Home = () => {
             </Col>
             <Col sm={4}>
               <Image
+                className='hoverimg'
                 src='../Finishing.jpg'
-                alt='placeholder'
+                alt='Eco-Friendly Finishing for Carpentry'
                 width='90%'
                 height='300'
                 rounded
+                as={motion.img}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
               />
-              <h1 style={{ fontSize: 40 }}>
+              <h5 style={{ fontSize: 40 }}>
                 Eco-Friendly Finishing Techniques
-              </h1>
+              </h5>
               <p className='my-5' style={{ fontSize: 20 }}>
                 We use environmentally friendly finishes to enhance the natural
                 beauty of the wood while minimizing our ecological impact.
@@ -127,7 +163,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
-      </div>
+      </motion.div>
 
       <TestimonialCarousel />
       <CallToActionSection

@@ -79,21 +79,10 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className='bg-dark text-white p-3'>
-          <Col className='text-center'>
+          <Col>
             <div>
               <p>
-                © 2024 Forging Forest. All rights reserved. |{' '}
-                <a href='/privacy' className='text-white px-5'>
-                  Privacy Policy
-                </a>{' '}
-                |{' '}
-                <a href='/terms' className='text-white px-5'>
-                  Terms and Conditions
-                </a>{' '}
-                |{' '}
-                <a href='/cookies' className='text-white px-5'>
-                  Cookie Policy
-                </a>
+                © 2024 Forging Forest. All rights reserved.
               </p>
             </div>
           </Col>

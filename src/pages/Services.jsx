@@ -13,10 +13,10 @@ const Services = () => {
           <Col className='mx-5' md={{ span: 3 }}>
             <Image
               src='../handmade.jpg'
-              alt='handmade'
+              alt='Handmade Furniture'
               width='80%'
               height='250'
-              className='my-5'
+              className='my-5 hoverimg'
             />
             <h2 className='my-5' style={{ fontSize: 50 }}>
               Handmade Furniture
@@ -36,10 +36,10 @@ const Services = () => {
           <Col md={{ span: 3, offset: 1 }}>
             <Image
               src='../refurbish.jpg'
-              alt='refurbish'
+              alt='Refurbishing'
               width='80%'
               height='250'
-              className='my-5'
+              className='my-5 hoverimg'
             />
             <h2 className='my-5' style={{ fontSize: 50 }}>
               Custom Refurbishment
@@ -59,10 +59,10 @@ const Services = () => {
           <Col md={{ span: 3, offset: 1 }}>
             <Image
               src='../donate.jpg'
-              alt='donate'
+              alt='Wood Donations'
               width='80%'
               height='250'
-              className='my-5'
+              className='my-5 hoverimg'
             />
             <h2 className='my-5' style={{ fontSize: 50 }}>
               Donations

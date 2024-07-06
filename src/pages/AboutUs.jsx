@@ -45,19 +45,6 @@ const AboutUs = () => (
       buttonLink='/services'
       imageSrc='../PersonalizedApproach.jpg'
     />
-
-    <div>
-      <Col className='text-center my-5' sm={4} md={{ span: 12 }}>
-        <Image
-          src='../AboutUs.jpg'
-          alt='placeholder'
-          width='30%'
-          height='auto'
-          roundedCircle
-        />
-      </Col>
-    </div>
-
     <Container fluid className='p-5 my-5'>
       <Row className='my-5'>
         <Col sm={4} md={7}>
@@ -77,7 +64,7 @@ const AboutUs = () => (
           <Image
             className='my-5'
             src='../1.jpg'
-            alt='placeholder'
+            alt='Sustainable Woodworking at Forging Forest'
             width='80%'
             height='280'
             rounded
@@ -88,7 +75,7 @@ const AboutUs = () => (
         <Col sm={4} md={{ span: 3 }}>
           <Image
             src='../2.jpg'
-            alt='placeholder'
+            alt='Eco-Friendly Finishing for Carpentry'
             width='80%'
             height='280'
             rounded
@@ -123,7 +110,7 @@ const AboutUs = () => (
         <Col sm={4} md={{ span: 3, offset: 1 }}>
           <Image
             src='../3.jpg'
-            alt='placeholder'
+            alt='Sustainable Woodworking Wabi sabi'
             width='80%'
             height='280'
             rounded
@@ -135,7 +122,7 @@ const AboutUs = () => (
         <Col sm={4} md={{ span: 3 }}>
           <Image
             src='../4.jpg'
-            alt='placeholder'
+            alt='Sustainable Woodworking Chopping boards'
             width='80%'
             height='280'
             rounded
