@@ -28,7 +28,7 @@ function Header() {
           </Nav.Link>
         </Nav>
         <Col className='me-5' xs='auto'>
-          <Button variant='dark'>Learn More</Button>
+          <Button variant='dark' href='/about'>Learn More</Button>
         </Col>
       </Navbar>
     </header>
