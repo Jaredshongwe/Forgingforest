@@ -9,7 +9,8 @@ const GalleryCarousel = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('/api/images');
+        // eslint-disable-next-line no-undef
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/images`);
         console.log('Fetched images:', response.data);  // Add logging
         setImages(response.data);
       } catch (error) {

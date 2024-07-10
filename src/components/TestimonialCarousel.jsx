@@ -9,7 +9,8 @@ const TestimonialCarousel = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await axios.get('/api/testimonials');
+        // eslint-disable-next-line no-undef
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/testimonials`);
         console.log('Fetched testimonials:', response.data);  // Add logging
         setTestimonials(response.data);
       } catch (error) {

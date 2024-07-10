@@ -13,7 +13,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://vercel.com/jareds-projects-214d4ea3/forgingforest/eeqMrqmkowNnHXd6aD11RNY9W5be',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,
+}));
 app.use(bodyParser.json());
 
 // Connect to MongoDB
