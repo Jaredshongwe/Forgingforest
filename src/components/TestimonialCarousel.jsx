@@ -10,8 +10,8 @@ const TestimonialCarousel = () => {
     const fetchTestimonials = async () => {
       try {
         // eslint-disable-next-line no-undef
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/testimonials`);
-        console.log('Fetched testimonials:', response.data);  // Add logging
+        const response = await axios.get(`https://forgingforest.onrender.com/api/testimonials`);
+        console.log('Fetched testimonials:', response);  // Add logging
         setTestimonials(response.data);
       } catch (error) {
         console.error('Error fetching testimonials', error);

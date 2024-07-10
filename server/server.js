@@ -9,12 +9,20 @@ import imageRoutes from './routes/image.js';
 import faqRoutes from './routes/faq.js';
 
 dotenv.config();
-
 const app = express();
+const allowedOrigins = ['http://localhost:5173', 'https://vercel.com/jareds-projects-214d4ea3/forgingforest/eeqMrqmkowNnHXd6aD11RNY9W5be'];
 
 // Middleware
 app.use(cors({
-  origin: 'https://vercel.com/jareds-projects-214d4ea3/forgingforest/eeqMrqmkowNnHXd6aD11RNY9W5be',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));

@@ -10,8 +10,8 @@ const GalleryCarousel = () => {
     const fetchImages = async () => {
       try {
         // eslint-disable-next-line no-undef
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/images`);
-        console.log('Fetched images:', response.data);  // Add logging
+        const response = await axios.get(`https://forgingforest.onrender.com/api/images`);
+        console.log('Fetched images:', response);  // Add logging
         setImages(response.data);
       } catch (error) {
         console.error('Error fetching images', error);
