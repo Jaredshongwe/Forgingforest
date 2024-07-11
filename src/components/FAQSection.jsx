@@ -8,7 +8,8 @@ const FAQSection = () => {
   useEffect(() => {
     const fetchFAQs = async () => {
       try {
-        const response = await axios.get('/api/faqs');
+        const response = await axios.get('https://forgingforest.onrender.com/api/faqs');
+        console.log('Fetched testimonials:', response.data);
         setFaqs(response.data);
       } catch (error) {
         console.error('Error fetching FAQs:', error);

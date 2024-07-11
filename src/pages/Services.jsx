@@ -82,7 +82,7 @@ const Services = () => {
           </Col>
         </Row>
       </Container>
-
+      <h1 style={{ fontSize: 50 }}>Gallery</h1>
       <GalleryCarousel />
       <CallToActionSection
         title='Transforming Wood into 

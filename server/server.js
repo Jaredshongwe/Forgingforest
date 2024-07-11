@@ -10,7 +10,7 @@ import faqRoutes from './routes/faq.js';
 
 dotenv.config();
 const app = express();
-const allowedOrigins = ['http://localhost:5173', 'https://vercel.com/jareds-projects-214d4ea3/forgingforest/eeqMrqmkowNnHXd6aD11RNY9W5be'];
+const allowedOrigins = ['http://localhost:5173', 'https://forgingforest-i6ihhxlif-jareds-projects-214d4ea3.vercel.app'];
 
 // Middleware
 app.use(cors({

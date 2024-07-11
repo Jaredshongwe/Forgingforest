@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
             <p className='text-white' style={{ fontSize: 30 }}>
               At Forging Forest, we are dedicated to sustainable woodworking and
-              carpentry. Our skilled artisans create unique pieces using
+              carpentry. Our artisans create unique pieces using
               recycled wood, promoting a greener and more eco-friendly
               lifestyle.
             </p>
@@ -29,7 +29,7 @@ const HeroSection = () => {
                 </Button>
               </Col>
               <Col>
-                <Button variant='outline-light' href='/services'>
+                <Button variant='outline-light' href='/contact'>
                   Learn more
                 </Button>
               </Col>
